@@ -18,7 +18,7 @@ function Details({Details}) {
              .then(res => {
               setDetail(res.data)
               setForms(res.data.forms[0].name)
-              setAbility(...ability , res.data.abilities.map(item => item.ability.name))
+              setAbility((res) => [...ability , res.data.abilities.map(item => item.ability.name)])
               setHeight(res.data.height)
               setSpecies(res.data.species.name)
               setWeight(res.data.weight)
@@ -26,7 +26,7 @@ function Details({Details}) {
              .catch(error => {
                 console.log(error)
              })
-      },[Details])
+      },[Details , ability])
 
   return(
     <div className='container'>
