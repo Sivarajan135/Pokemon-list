@@ -1,0 +1,76 @@
+.container
+{
+    height: 100vh;
+    background-color: rgb(94, 175, 241);
+}
+.Heading
+{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.list-container
+{ 
+   background-color: rgba(255,255,255,0.7);
+   width : 20%;
+   height : auto;
+   position: absolute;
+   left: 600px;
+   top: 20px;
+}
+.pokemon-list
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 5px;
+   
+}
+.num
+{
+    display: flex;
+    gap: 20px;
+}
+/* a
+{
+    border: 1px solid rgb(94, 175, 241);
+    padding: 10px 70px;
+    margin: 10px;
+    background-color: white;
+    text-decoration: none;
+} */
+a:hover
+{
+    box-shadow: 0px 0px 4px 4px rgb(94, 175, 241);
+    text-decoration: underline;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+}
+.pagination
+{
+    display: inline-block;
+    position : absolute;
+    top: 94%;
+    left: 40%;
+}
+.pagination button
+{
+    color: black;
+    float: left;
+    padding: 8px 26px;
+    text-decoration: none; 
+    outline: none;
+    border: none;   
+    border: 1px solid rgba(255,255,255,0.7);
+}
+.pagination button:hover
+{
+    background-color: rgb(202, 229, 224);
+    color: #000;
+}
+.active
+{
+   background-color: rgb(6, 245, 165);
+}

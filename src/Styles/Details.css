@@ -1,0 +1,33 @@
+.list-Container
+{ 
+   background-color: rgba(255,255,255,0.7);
+   width : 30%;
+   height : auto;
+   position: absolute;
+   left: 510px;
+   top: 230px;
+   box-shadow: 0px 0px 25px 2px rgba(0,0,0);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.cancel
+{
+    position: absolute;
+    bottom: 180px;
+    left : 700px;
+    outline: none;
+    border: none;
+    padding: 7px;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 5px;
+}
