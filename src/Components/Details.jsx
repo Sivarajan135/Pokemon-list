@@ -11,6 +11,8 @@ function Details({Details}) {
   const [species , setSpecies] = useState('')
   const [weight , setWeight] = useState('')
 
+  console.log(detail)
+
     useEffect(() => {
         axios.get(Details)
              .then(res => {
@@ -24,7 +26,7 @@ function Details({Details}) {
              .catch(error => {
                 console.log(error)
              })
-      },[])
+      },[Details])
 
   return(
     <div className='container'>
@@ -51,7 +53,7 @@ function Details({Details}) {
         </tr>
         <tr>
           <td>Weight</td>
-          <td>{weight}</td>
+          <td>{weight} kg</td>
         </tr>
       </table>
     </div>

@@ -1,19 +1,22 @@
 import React, {useEffect,useState} from 'react'
-import axios, { Axios } from 'axios'
+import axios from 'axios'
 import { Link } from 'react-router-dom';
 import '../Styles/NameList.css'
 
-function NameList({setdetailsApi , setshowpopup}) {
+function NameList({setdetailsApi}) {
     const [data , setData] = useState({})
     const [name , setName] = useState([])
     const [page , setPage] = useState(1)
     const [api , setApi] = useState("https://pokeapi.co/api/v2/pokemon")
     const [numberOrder , setNumberOrder] = useState(1)
+
+    console.log(name)
   
     useEffect(() => {
       axios.get(api)
            .then(res => {
               setData(res.data)
+              console.log(res.data);
               setName(res.data.results)
            })
            .catch(error => {
